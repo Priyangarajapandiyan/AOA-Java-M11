@@ -1,6 +1,6 @@
 
 # EX 1A Print All Numbers 
-## DATE: 6.8025
+## DATE: 6.8.25
 ## AIM:
 To Write a Java program that takes an integer input N from the user and prints all the numbers from 1 to N, separated by spaces, on a single line..
 
@@ -27,3 +27,28 @@ Register Number: 212223230161
 import java.util.Scanner;
 public class PrintNumbers {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        if (N <= 0) {
+            System.out.println("Invalid input. N must be greater than 0.");
+        } else {
+            for (int i = 1; i <= N; i++) {
+                System.out.print(i);
+                if (i < N) {
+                    System.out.print(" ");
+                }
+            }
+        }
+    }
+}
+
+```
+
+## Output:
+
+<img width="460" height="296" alt="image" src="https://github.com/user-attachments/assets/b64c53c0-5e5e-4640-b891-4b83671849ad" />
+
+
+## Result:
+The program successfully print all the numbers from 1 to N. 
